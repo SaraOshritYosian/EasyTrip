@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="headtitles">
+                <h1>EasyTrip</h1>
+                <h3>Explore Beyond Boundaries: Your Journey, Our Destination!</h3>
+            </div>
+            <a href="mainWindow.html">
+                <img src="photos/logo2.jpg" alt="logo">
+            </a>
+        </header>
+
+        <form class="contactUs" action="action_page.php" method="get">
+            <div>
+                <label for="name">Enter your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mailAddress">Mail Address:   </label>
+                <input type="email" id="mailAddress" name="mailAddress" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="phonenumber">Phone Number:</label>
+                <select>
+                    <option>050</option>
+                    <option>052</option>
+                    <option>053</option>
+                    <option>054</option>
+                    <option>058</option>
+                </select>
+                <input type="tel" id="phonenumber" name="phonenumber" length="7" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="msg">Comment:</label>
+                <textarea type="text" id="msg" name="msg" placeholder="Enter Your Comment Here" required>
+                    
+                </textarea>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <footer>
+            <div class="medialinks">
+                <a href="#">
+                    <img src="photos/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="photos/twitter.jpg" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img src="photos/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+            <div class="other">
+                <a href="AboutUs.html" target="_blank">About Us</a>
+                <a href="ContactUs.html" target="_blank">Contact Us</a>
+                <a href="Information.html" target="_blank">Information</a>
+                <a href="RateUs.html" target="_blank">Rate Us</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
