@@ -1,18 +1,30 @@
+body{
+    background-image: url('./photos/sandbg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+}
 
 body header{
-    background-color: rgb(225, 214, 193);
+    background-color: rgb(243, 240, 234, 0.7);
     top: 0;
     left: 0;
     position: fixed;
     width: 100%;
     z-index: 1;
+    padding: 0.5em; 
+    box-sizing: border-box;
 }
 
 
 .dest{
+    position: sticky;
+    top: 115px;
+    bottom: 150px;
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    /*padding-top: 90px;
+    padding-bottom: 40px;*/
     z-index: 0;
 }
 
@@ -32,6 +44,10 @@ body header{
     align-items: center;
 }
 
+.gallery {
+    padding-top: 40px;
+}
+
 .imagestyle{
     height: 140px;
     width: 160px;
@@ -46,10 +62,11 @@ body header{
 
 header img{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 50px;
-    width: 50px;
+    top: 1rem;
+    left: 1rem;
+    height: 4rem;
+    width: 4rem;
+
 }
 
 footer {
@@ -81,12 +98,19 @@ footer .medialinks a img{
   }
 
   footer .other a{
-    padding-right: 100px;
-  }
+    padding: 5px 50px;
+    margin-right: 25px;
+    bottom: 0;
+    background: white;
+    border: 2px solid wheat;
+    border-radius: 10%;
+    color: black;
+   }
 
   footer .other{
     padding-top: 30px;
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
   }
 
 
@@ -99,34 +123,37 @@ footer .medialinks a img{
   }
 
 .contactUs{
-    /*position: relative;
-    margin-top: 200px;
-    margin-left: 40px;
-    display: block;*/
     display: flex;
     position: relative;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 40px;
     flex-direction: column;
-    max-width: 400px; /* Set a maximum width for the form */
+    max-width: 400px; /
 
 }
-.contactUs div {/*chatGPT*/
-    margin-bottom: 15px; /* Add some space between input sections */
+.contactUs div {
+    margin-bottom: 15px;
 }
-.label_contactUs {/*chatGPT*/
-    display: block; /* Make labels block-level to align them properly */
+.label_contactUs {
+    display: block; 
+    margin-bottom: 10px;
 }
-input, select, textarea {/*chatGPT*/
+input, textarea {/*chatGPT*/
     width: 100%; /* Make input elements take up 100% of the container width */
     box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+form div #phonenumber{
+    position: relative;
+    float: left;
+}
+textarea{
+    height: 100px;
 }
 input[type="submit"] {/*chatGPT*/
     width: auto; /* Allow the submit button to take the default width */
 }
 .table{
     position: relative;
-    
     font-size: 25px;
     margin-bottom: 40px;
     align-items: center;
@@ -147,6 +174,7 @@ input[type="submit"] {/*chatGPT*/
     margin-top: 150px;
     margin-left: 30px;
 }
+
 .AboutUsTitle{
     position: relative;
     margin-top: 150px;
@@ -154,6 +182,7 @@ input[type="submit"] {/*chatGPT*/
     display: inline-block;
     text-align: center;
 }
+
 .aboutUsP{
     position: relative;
     margin-top: 15px;
@@ -166,6 +195,7 @@ input[type="submit"] {/*chatGPT*/
 
 
 }
+
 .frame{
   position: relative;
   width: 350px;
@@ -175,7 +205,27 @@ input[type="submit"] {/*chatGPT*/
   margin: auto;
   padding: 15px 10px;
 }
+
 .travelPhoto{
     height:250px;
     width: 350px;
 }
+
+.submit{
+    text-align: right;
+}
+
+.rateUs{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 40px;
+}
+
+.rateUs div h3{
+    text-align: center;
+}
+
+.rateUs label{
+    margin-bottom: 10px;
+}
+
