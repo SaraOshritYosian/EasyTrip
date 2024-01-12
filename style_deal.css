@@ -83,6 +83,11 @@ header img{
     box-sizing: border-box; 
 }
 
+.location img{
+    height: 14em;
+    width: 20em;
+}
+
 footer {
     margin-top: 20%;
     padding-top: 20px;
