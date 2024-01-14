@@ -1,5 +1,5 @@
 body{
-    background-image: url('./photos/fd3.jpeg');
+    background-image: url('./photos/sandbg.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center center;
@@ -25,21 +25,43 @@ body header{
 }
 
 
-@media only screen and (max-width: 768px) {
-    .gallery img{
-        width: 95%;
+/**/
+@media only screen and (min-width: 800px) {
+    .contactUs{
+        max-width: 80%;
     }
-    .dest h1{
-       text-align: center;
+    .namefield input,
+    .msgfield input,
+    .mailfield input,
+    textarea {
+        width: 100%; 
+        box-sizing: border-box;
+        height: 30px; 
+    }
+
+    .phone {
+        display: flex;
+        gap: 4px;
+    }
+
+    .phone select{
+        width: 130px;
+        height: 30px; 
+    }
+
+    form div #phonenumber{
+        height: 30px; 
+        position: relative;
+        width: 420px;
     }
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .gallery img{
         width: 80%;
     }
 }
+
 
 /* Gallery of Images*/
 
@@ -57,37 +79,8 @@ body .dest h1{
     text-align: left;
     font-size: 30px;
     margin-bottom: 40px;
-  }
-
-.image-text {
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-   /* -webkit-text-stroke: 1px black;
-    text-stroke: 2px black; */
-    text-align: center;
 }
 
-.destinationAndImage {
-    display: inline-block;
-    position: relative;
-    align-items: center;
-}
-
-.gallery {
-    padding-top: 1em;
-}
-
-.imagestyle{
-    height: 200px;
-    width: 220px;
-    border-radius: 20%;
-    border: white 5px solid;
-}
 
 .headtitles {
     text-align: center;
@@ -105,63 +98,16 @@ header img{
 }
 
 
-/* Footer*/
-
-footer {
-    margin-top: 20%;
-    padding-top: 20px;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    border-top: rgb(225, 214, 193) solid 2px ;
-}
-
-footer .medialinks a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    padding-right: 50px;
-}
-
-footer .medialinks a img{
-    height: 40px;
-    width: 40px;
-}
-
-footer .other a:hover {
-    border: 2px solid pink;
-    color: white;
-    background-color: plum;
-  }
-
-  footer .other a{
-    padding: 5px 50px;
-    margin-right: 25px;
-    bottom: 0;
-    background: white;
-    border: 2px solid wheat;
-    border-radius: 10%;
-    color: black;
-    font-size: 1.085em;
-    font-weight: bold;
-   }
-
-  footer .other{
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
 
  /* Contact Us*/
 
-.contactUs{
+ .contactUs{
     display: flex;
     position: relative;
     margin-top: 200px;
-    margin-left: 40px;
+    margin-left: 25%;
     flex-direction: column;
-    max-width: 400px; /
+    max-width: 400px; 
 
 }
 
@@ -172,16 +118,33 @@ footer .other a:hover {
 .label_contactUs {
     display: block; 
     margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-input, textarea {
+.namefield input,
+.msgfield input,
+.mailfield input,
+ textarea {
     width: 100%; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    height: 25px; 
+}
+
+.phone {
+    display: flex;
+    gap: 3px;
+}
+
+.phone select{
+    width: 70px;
+    height: 30px; 
 }
 
 form div #phonenumber{
+    height: 25px; 
     position: relative;
-    float: left;
+    width: 390px;
 }
 
 textarea{
@@ -191,6 +154,8 @@ textarea{
 input[type="submit"] {
     width: auto; 
 }
+
+
 
 
 
@@ -273,16 +238,73 @@ input[type="submit"] {
 /* RATE US */
 
 .rateUs{
-    position: relative;
-    margin-top: 200px;
-    margin-left: 40px;
+    position: sticky;
+    top: 9em;
+    margin-bottom: 8em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .rateUs div h3{
     text-align: center;
+    font-size: 20px;
 }
 
 .rateUs label{
     margin-bottom: 10px;
+    font-size: 1.1em;
 }
+
+.rateUs h2{
+    font-size: 30px;
+}
+
+
+/* Footer*/
+
+footer {
+    margin-top: 20%;
+    padding-top: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border-top: rgb(225, 214, 193) solid 2px ;
+}
+
+footer .medialinks a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    padding-right: 50px;
+}
+
+footer .medialinks a img{
+    height: 40px;
+    width: 40px;
+}
+
+footer .other a:hover {
+    border: 2px solid pink;
+    color: white;
+    background-color: plum;
+  }
+
+  footer .other a{
+    padding: 5px 50px;
+    margin-right: 25px;
+    bottom: 0;
+    background: white;
+    border: 2px solid wheat;
+    border-radius: 10%;
+    color: black;
+    font-size: 1.085em;
+    font-weight: bold;
+   }
+
+  footer .other{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 

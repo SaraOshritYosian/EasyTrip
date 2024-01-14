@@ -4,7 +4,7 @@
         <title>Contact Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
+        <link href="style_footer.css" rel="stylesheet">
     </head>
 
     <body>
@@ -19,35 +19,37 @@
         </header>
 
         <form class="contactUs" action="action_page.php" method="get">
-            <div>
+            <div class="namefield">
                 <label class="label_contactUs" for="name">Enter your Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
 
             <br>
 
-            <div>
+            <div class="mailfield">
                 <label class="label_contactUs" for="mailAddress">Mail Address:   </label>
                 <input type="email" id="mailAddress" name="mailAddress" required>
             </div>
 
             <br>
 
-            <div>
+            <div class="telephone">
                 <label class="label_contactUs" for="phonenumber">Phone Number:</label>
-                <select>
-                    <option>050</option>
-                    <option>052</option>
-                    <option>053</option>
-                    <option>054</option>
-                    <option>058</option>
-                </select>
-                <input type="tel" id="phonenumber" name="phonenumber" length="7" required>
+                <div class="phone">
+                    <select>
+                        <option>050</option>
+                        <option>052</option>
+                        <option>053</option>
+                        <option>054</option>
+                        <option>058</option>
+                    </select>
+                    <input type="tel" id="phonenumber" name="phonenumber" length="7" required>
+                </div>
             </div>
 
             <br>
 
-            <div>
+            <div class="msgfield">
                 <label class="label_contactUs" for="msg">Comment:</label>
                 <textarea type="text" id="msg" name="msg" placeholder="Enter Your Comment Here" required>
                     
