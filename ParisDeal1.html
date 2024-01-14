@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EasyTrip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style_deal.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="headerDeals">
+            <img src="photos/logo_new.jpg" alt="logo">
+            <div class="headtitles">
+                <h1>EasyTrip</h1>
+            </div>
+        </header>
+
+        <div class="details">
+            <div class="detail">
+                <p>Name: <strong>Hotel Elysees Opera</strong></p>
+                <br>
+                <p>N° of Hosts: <strong>2</strong></p>
+                <br>
+                <p>Dates: <strong>05/06/2024 - 10/06/24</strong></p>
+                <br>
+                <p>Boards:</p>
+                <label for="full"><strong>full</strong></label>
+                    <input type="checkbox" id="full" name="board">
+                <label for="semi"><strong>Semi</strong></label>
+                    <input type="checkbox" id="semi" name="board">
+                
+            </div>
+        
+            <div class="flight">
+                <p>Arrival:</p>
+                <p><strong>Jun 05, 2024</strong></p>
+                <br>
+                <p>Departure:</p>
+                <p><strong>Jun 10, 2024</strong></p>
+                <br>
+                <p>Room Type:</p>
+                <label for="Premium"><strong>Premium</strong></label>
+                    <input type="checkbox" id="Premium" name="roomtype">
+                <label for="Classic"><strong>Classic</strong></label> 
+                    <input type="checkbox" id="Classic" name="roomtype">
+                
+            </div>
+
+            <div class="payment">
+                <p>Payement:</p>
+                <p><strong>130$</strong></p>
+                <br>
+                <form action="action_page.php" method="GET">
+                    <input type="submit" value="Reserve">
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="hotelContainer">
+            <div class="hotelDetailsAndImg">
+                <div class="hotelName">
+                    <h2>Hotel Elysees Opera</h2>
+                    <p>Located in the chic 8th district in Paris, this hotel offers modern guest rooms with a balcony. It has a 24-hour reception with a tour desk and ticket service.
+
+                        All soundproofed guest rooms include a 43-inch flat-screen TV (108cm) with cable channels and free Wi-Fi access. Each room has a simple décor and a hairdryer in the private bathroom.</p>
+                </div>
+        
+                <div class="hotelImg">
+                    <img src="photos/parisDeal1.jpg" alt="Hotel Images">
+                </div>
+            </div>    
+            
+            <div class="reviewLocation">
+                <div class="review">
+                    <h3>Review</h3>
+                    <p>Facilities, location and staff were great. Staff were very friendly and helpful!</p>
+                </div>
+        
+                <div class="location">
+                    <h3>Location:</h3>
+                    <img src="photos/parisDeals1Location.jpg" alt="Location on the Map">
+                </div>   
+            </div> 
+        </div>  
+
+        <div class="selected-flight">
+            <div class="flight-item">
+                <div class="flight-linf">
+                    <div class="fc-tinf">
+                        <b>Arrival</b>
+                        <span class="fct-sep">.</span>
+                        <span>Israir</span>
+                        <span class="fct-sep">.</span>
+                        <span>6H257</span>
+                    </div>
+                <div class="flight-main">
+                    <div class="flightcompany">
+                        <div class="fc-logo">
+                            <img src="https://d16tr0byigrcd.cloudfront.net/hf/images/sfMedia/active/air_company/H66_1_mini.gif" alt="Israir">
+                        </div>
+                    </div>
+                    <div class="takeoff">
+                        <div class="time">8:20</div>
+                        <span class="date">Jun 05, 2024</span>
+                        <div class="fb-airport">Tel-Aviv
+                            <span class="airport-code">(TLV)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 24 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+
+                    <div class="landing">
+                        <div class="time">12:35</div>
+                        <span class="date">Jun 10, 2024</span>
+                        <div class="fb-airport">Paris
+                            <span class="airport-code">(CDG)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 08 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+ <!--       <div class="selected-flight">
+            <div class="flight-item">
+                <div class="flight-linf">
+                    <div class="fc-tinf">
+                        <b>Departure</b>
+                        <span class="fct-sep">.</span>
+                        <span>Budapest</span>
+                        <span class="fct-sep">.</span>
+                        <span>5Z345</span>
+                    </div>
+                <div class="flight-main">
+                    <div class="flightcompany">
+                        <div class="fc-logo">
+                            <img src="https://d16tr0byigrcd.cloudfront.net/hf/images/sfMedia/active/air_company/H66_1_mini.gif" alt="Israir">
+                        </div>
+                    </div>
+                    <div class="takeoff">
+                        <div class="time">05:35</div>
+                        <span class="date">January 20, 2024</span>
+                        <div class="fb-airport">Budapest
+                            <span class="airport-code">(BUD)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 16 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+
+                    <div class="landing">
+                        <div class="time">12:35</div>
+                        <span class="date">January 20, 2024</span>
+                        <div class="fb-airport">Tel-Aviv
+                            <span class="airport-code">(TLV)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 57 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        </div>
+
+        <footer>
+            <div class="medialinks">
+                <a href="https://www.instagram.com/">
+                    <img src="photos/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="photos/twitter.jpg" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="photos/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+            <div class="other">
+                <a href="AboutUs.html" target="_blank">About Us</a>
+                <a href="ContactUs.html" target="_blank">Contact Us</a>
+                <a href="Information.html" target="_blank">Information</a>
+                <a href="RateUs.html" target="_blank">Rate Us</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>

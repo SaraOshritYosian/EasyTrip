@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EasyTrip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style_deal.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="headerDeals">
+            <img src="photos/logo_new.jpg" alt="logo">
+            <div class="headtitles">
+                <h1>EasyTrip</h1>
+            </div>
+        </header>
+
+        <div class="details">
+            <div class="detail">
+                <p>Name: <strong>MODERN MOUNTAIN II</strong></p>
+                <br>
+                <p>N° of Hosts: <strong>2</strong></p>
+                <br>
+                <p>Dates: <strong>08/05/2024 - 12/05/24</strong></p>
+                <br>
+                <p>Boards:</p>
+                <label for="full"><strong>full</strong></label>
+                    <input type="checkbox" id="full" name="board">
+                <label for="semi"><strong>Semi</strong></label>
+                    <input type="checkbox" id="semi" name="board">
+                
+            </div>
+        
+            <div class="flight">
+                <p>Arrival:</p>
+                <p><strong>May 08, 2024</strong></p>
+                <br>
+                <p>Departure:</p>
+                <p><strong>May 12, 2024</strong></p>
+                <br>
+                <p>Room Type:</p>
+                <label for="Premium"><strong>Premium</strong></label>
+                    <input type="checkbox" id="Premium" name="roomtype">
+                <label for="Classic"><strong>Classic</strong></label> 
+                    <input type="checkbox" id="Classic" name="roomtype">
+                
+            </div>
+
+            <div class="payment">
+                <p>Payement:</p>
+                <p><strong>138$</strong></p>
+                <br>
+                <form action="action_page.php" method="GET">
+                    <input type="submit" value="Reserve">
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="hotelContainer">
+            <div class="hotelDetailsAndImg">
+                <div class="hotelName">
+                    <h2>MODERN MOUNTAIN II</h2>
+                    <p>Ideally situated in the centre of Kolašin, MODERN MOUNTAIN II is a recently renovated apartment, providing free WiFi and private parking. This apartment provides a terrace as well as a bar. This 4-star apartment offers private entrance.
+
+                        The units come with parquet floors and feature a fully equipped kitchen with a fridge, a dining area, a flat-screen TV, and a private bathroom with shower and a hair dryer. At the apartment complex, every unit has bed linen and towels.
+                        
+                        The nearest airport is Podgorica Airport, 69 km from the apartment.</p>
+                </div>
+        
+                <div class="hotelImg">
+                    <img src="photos/cetinjeDeal1.jpg" alt="Hotel Images">
+                </div>
+            </div>    
+            
+            <div class="reviewLocation">
+                <div class="review">
+                    <h3>Review</h3>
+                    <p>You need to update the check-out time on the website because it says it's until 12. The woman working as a maid entered the room at 10 and was very rude, asking who told us it was until 12 and that we should have left the room</p>
+                </div>
+        
+                <div class="location">
+                    <h3>Location:</h3>
+                    <img src="photos/cetinjeDeal1Location.jpg" alt="Location on the Map">
+                </div>   
+            </div> 
+        </div>  
+
+        <div class="selected-flight">
+            <div class="flight-item">
+                <div class="flight-linf">
+                    <div class="fc-tinf">
+                        <b>Arrival</b>
+                        <span class="fct-sep">.</span>
+                        <span>WizzAir</span>
+                        <span class="fct-sep">.</span>
+                        <span>W6 8787</span>
+                    </div>
+                <div class="flight-main">
+                    <div class="flightcompany">
+                        <div class="fc-logo">
+                            <img src="photos/wizzLogo.jpg" alt="Wizz air logo">
+                        </div>
+                    </div>
+                    <div class="takeoff">
+                        <div class="time">7:20</div>
+                        <span class="date">May 08, 2024</span>
+                        <div class="fb-airport">Tel-Aviv
+                            <span class="airport-code">(TLV)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 16 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+
+                    <div class="landing">
+                        <div class="time">16:35</div>
+                        <span class="date">May 12, 2024</span>
+                        <div class="fb-airport">Cetinje
+                            <span class="airport-code">(CTJ)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 16 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+ <!--       <div class="selected-flight">
+            <div class="flight-item">
+                <div class="flight-linf">
+                    <div class="fc-tinf">
+                        <b>Departure</b>
+                        <span class="fct-sep">.</span>
+                        <span>Budapest</span>
+                        <span class="fct-sep">.</span>
+                        <span>5Z345</span>
+                    </div>
+                <div class="flight-main">
+                    <div class="flightcompany">
+                        <div class="fc-logo">
+                            <img src="https://d16tr0byigrcd.cloudfront.net/hf/images/sfMedia/active/air_company/H66_1_mini.gif" alt="Israir">
+                        </div>
+                    </div>
+                    <div class="takeoff">
+                        <div class="time">05:35</div>
+                        <span class="date">January 20, 2024</span>
+                        <div class="fb-airport">Budapest
+                            <span class="airport-code">(BUD)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 16 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+
+                    <div class="landing">
+                        <div class="time">12:35</div>
+                        <span class="date">January 20, 2024</span>
+                        <div class="fb-airport">Tel-Aviv
+                            <span class="airport-code">(TLV)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 57 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        </div>
+
+        <footer>
+            <div class="medialinks">
+                <a href="https://www.instagram.com/">
+                    <img src="photos/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="photos/twitter.jpg" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="photos/facebook.jpg" alt="Facebook">
+                </a>
+            </div>
+            <div class="other">
+                <a href="AboutUs.html" target="_blank">About Us</a>
+                <a href="ContactUs.html" target="_blank">Contact Us</a>
+                <a href="Information.html" target="_blank">Information</a>
+                <a href="RateUs.html" target="_blank">Rate Us</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
