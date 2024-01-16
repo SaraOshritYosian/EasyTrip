@@ -13,7 +13,6 @@ header h1{
 }
 
 body header{
-    /*color: white;*/
     background-color: rgb(243, 240, 234, 0.7);
     top: 0;
     left: 0;
@@ -25,19 +24,19 @@ body header{
 }
 
 
-@media only screen and (max-width: 768px) {
-    .gallery img{
-        width: 95%;
+
+
+@media only screen and (min-width: 250px) and (max-width: 1024px) and (orientation: landscape) {
+    .destinationAndImage a img{
+        display: flex;
     }
-    .dest h1{
-       text-align: center;
-    }
+    
 }
 
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .gallery img{
-        width: 80%;
+@media only screen and (min-width: 200px) and (max-width: 250px), (orientation: portrait) {
+    .destinationAndImage a img{
+      width: 95%;
+      height: auto;
     }
 }
 
@@ -77,6 +76,7 @@ body .dest h1{
     align-items: center;
 }
 
+
 .gallery {
     padding-top: 1em;
 }
@@ -88,10 +88,9 @@ body .dest h1{
     border: white 5px solid;
 }
 
-.imagestyle:hover {
-    border: black 5px solid ;
+.impulso-hotel:hover {
+    border: black 5px solid;
 }
-
 
 .headtitles {
     text-align: center;

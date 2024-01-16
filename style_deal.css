@@ -22,8 +22,38 @@ header img{
     display: flex;
     gap: 20px;
     align-items: last baseline;
-    margin-left: 15em;
+    margin-left: auto;
+    margin-right: 30px;
 }
+
+
+@media only screen and (min-width: 50px) and (max-width: 680px), (orientation: portait){
+    .hotelName p, h2, h3, .review p{
+        text-align: center;
+        font-size: 1.75em;
+    }
+
+    h2, h3{
+        font-size: 2em;
+        justify-content: center;
+    }
+
+    .hotelDetailsAndImg{
+        margin-bottom: 10px;
+    }
+
+    .hotelName p{
+        margin-bottom: 70px;
+    }
+
+    .hotelName, .reviewLocation, .review, .hotelDetailsAndImg{
+        justify-content: center;
+    }
+
+}
+
+
+/* Details*/
 
 .details {
     position: sticky;
@@ -48,21 +78,31 @@ header img{
 }
 
 
+/* description */
+
+/* flex-box for hotel name and dscription and image*/
 .hotelDetailsAndImg {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
+/* flex-box for review and location*/
 .reviewLocation{
     position: relative;
     display: flex;
     justify-content: space-evenly;
     margin-top: 5em;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
+
+/* flex-box - container for the 2 other flex-box*/
 .hotelContainer {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 2em;
@@ -70,6 +110,7 @@ header img{
 }
 
 .hotelContainer p{
+    font-size: 20px;
     height: 15em;
     width: 13em;
     padding: 5px 5px;
@@ -96,6 +137,8 @@ header img{
     width: 20em;
 }
 
+/* FOOTER */
+
 footer {
     margin-top: 20%;
     padding-top: 20px;
@@ -119,11 +162,11 @@ footer .medialinks a img{
     width: 40px;
 }
 
-.footer .medialinks a:hover {
-    background: white;
-    border: 1px solid red;
-    color: red;
-  }
+footer .other a:hover {
+    border: 2px solid pink;
+    color: white;
+    background-color: plum;
+}
 
   footer .other a{
     padding: 5px 50px;
@@ -142,7 +185,7 @@ footer .medialinks a img{
   }
 
 
-
+ /* Flight banner */
 
   .selected-flight {
     display: flex;
