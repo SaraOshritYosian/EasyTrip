@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EasyTrip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style_deal.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="headerDeals">
+            <img src="photos/LogoNoB.png" alt="logo">
+            <div class="headtitles">
+                <h1>EasyTrip</h1>
+            </div>
+            <ul class="navb">
+                <li><a href="#loc">Location</a></li>
+                <li><a href="#flight">Flight Details</a></li>
+            </ul>
+        </header>
+
+        <div class="details">
+            <div class="detail">
+                <p>Name: <strong>Hotel Columbia</strong></p>
+                <br>
+                <p>N° of Hosts: <strong>1</strong></p>
+                <br>
+                <p>Dates: <strong>21/03/2024 - 26/03/24</strong></p>
+                <br>
+                <p>Boards:</p>
+                <label for="full"><strong>full</strong></label>
+                    <input type="checkbox" id="full" name="board">
+                <label for="semi"><strong>Semi</strong></label>
+                    <input type="checkbox" id="semi" name="board">
+                
+            </div>
+        
+            <div class="flight">
+                <p>Arrival:</p>
+                <p><strong>Mar 21, 2024</strong></p>
+                <br>
+                <p>Departure:</p>
+                <p><strong>Mar 26, 2024</strong></p>
+                <br>
+                <p>Room Type:</p>
+                <label for="Premium"><strong>Premium</strong></label>
+                    <input type="checkbox" id="Premium" name="roomtype">
+                <label for="Classic"><strong>Classic</strong></label> 
+                    <input type="checkbox" id="Classic" name="roomtype">
+                
+            </div>
+
+            <div class="payment">
+                <p>Payement:</p>
+                <p><strong>130$</strong></p>
+                <br>
+                <form action="action_page.php" method="GET">
+                    <input type="submit" value="Reserve">
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="hotelContainer">
+            <div class="hotelDetailsAndImg">
+                <div class="hotelName">
+                    <h2>Hotel Columbia</h2>
+                    <p>Hotel Columbia is a family-run guest house set in a historic building, in a central location of Vienna and a 5-minute walk from the Town Hall and the metro stop. Free WiFi is available.
+
+                        The rooms are fitted with cable TV, a safety deposit box and a bathroom with shower. The hotel offers for all guests a big fridge in the public area instead of the minibars in the room, so 2,2 tons of carbon dioxide (CO2) is saved every year for a better environment.</p>
+                </div>
+        
+                <div class="hotelImg">
+                    <img src="photos/viennaDeal2.jpg" alt="Hotel Images">
+                </div>
+            </div>    
+            
+            <div class="reviewLocation">
+                <div class="review">
+                    <h3>Review</h3>
+                    <p>Amazing spot not too far from the town centre. Was perfect for the Christmas markets! We had a lovely room no6 was awesome!</p>
+                </div>
+        
+                <div id="loc" class="location">
+                    <h3>Location:</h3>
+                    <img src="photos/viennaDeal2Location.jpg" alt="Location on the Map">
+                </div>   
+            </div> 
+        </div>  
+
+        <div id="flight" class="selected-flight">
+            <div class="flight-item">
+                <div class="flight-linf">
+                    <div class="fc-tinf">
+                        <b>Arrival</b>
+                        <span class="fct-sep">.</span>
+                        <span><EL-AL></EL-AL></span>
+                        <span class="fct-sep">.</span>
+                        <span>6H257</span>
+                    </div>
+                <div class="flight-main">
+                    <div class="flightcompany">
+                        <div class="fc-logo">
+                            <img src="photos/elalLogo.jpg" alt="EL-AL">
+                        </div>
+                    </div>
+                    <div class="takeoff">
+                        <div class="time">05:20</div>
+                        <span class="date">Mar 21, 2024</span>
+                        <div class="fb-airport">Tel-Aviv
+                            <span class="airport-code">(TLV)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 20 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+
+                    <div class="landing">
+                        <div class="time">7:40</div>
+                        <span class="date">Mar 26, 2024</span>
+                        <div class="fb-airport">Vienna
+                            <span class="airport-code">(VIE)</span>
+                        </div>
+                    </div>
+                    <div class="flight-duration">
+                        <div class="duration">
+                            3 hours and 06 minutes
+                        </div>
+                        <div class="stops">direct</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="medialinks">
+                <a href="https://www.instagram.com/">
+                    <img src="photos/instagramLogo.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="photos/twitterLogo.png" alt="Twitter">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="photos/facebook.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="other">
+                <a href="AboutUs.html" target="_blank">About Us</a>
+                <a href="ContactUs.html" target="_blank">Contact Us</a>
+                <a href="Information.html" target="_blank">Information</a>
+                <a href="RateUs.html" target="_blank">Rate Us</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
