@@ -31,6 +31,7 @@ header img{
     .hotelName p, h2, h3, .review p{
         text-align: center;
         font-size: 1.75em;
+        align-items: center;
     }
 
     h2, h3{
@@ -136,6 +137,7 @@ header img{
     height: 14em;
     width: 20em;
 }
+
 
 /* FOOTER */
 
