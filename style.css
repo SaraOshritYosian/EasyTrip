@@ -35,6 +35,10 @@ header{
       width: 95%;
       height: auto;
     }
+
+    .image-text{
+        font-size: 15px;
+    }
 }
 
 
