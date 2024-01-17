@@ -1,4 +1,4 @@
-body header{
+header{
     background-color: rgb(243, 240, 234, 0.7);
     top: 0;
     left: 0;
@@ -92,10 +92,11 @@ header img{
 .reviewLocation{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 5em;
     align-content: center;
-    flex-wrap: wrap;
+    
 }
 
 
@@ -139,24 +140,22 @@ header img{
 }
 
 
-/* FOOTER */
+/* Footer*/
 
 footer {
     margin-top: 20%;
     padding-top: 20px;
     display: inline-block;
-    position: relative;
     text-align: center;
     width: 100%;
     border-top: rgb(225, 214, 193) solid 2px ;
-    background-color: rgb(243, 240, 234, 0.7);
 }
 
-footer .medialinks a{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    padding-right: 50px;
+footer .medialinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
 }
 
 footer .medialinks a img{
@@ -170,21 +169,23 @@ footer .other a:hover {
     background-color: plum;
 }
 
-  footer .other a{
-    padding: 5px 50px;
-    margin-right: 25px;
-    bottom: 0;
-    background: white;
-    border: rgb(225, 214, 193) solid 2px;
+footer .other a { 
+    padding: 5px 25px;
+    border: 2px solid wheat;
     border-radius: 10%;
     color: black;
-   }
+    background: white;
+    bottom: 0;
+    font-size: 1.085em;
+    font-weight: bold;
+}
 
-  footer .other{
-    padding-top: 30px;
+footer .other{
+    margin-top: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-  }
+}
 
 
  /* Flight banner */
@@ -194,17 +195,18 @@ footer .other a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #f5f5f5; /* Adjust the background color as needed */
+    background-color: #f5f5f5; 
     padding: 20px;
-    margin-top: 20px; /* Add margin as needed */
-    border: 2px solid #ddd; /* Add border styling as needed */
+    margin-top: 20px; 
+    border: 2px solid #ddd; 
 }
 
 .flight-item {
     flex: 1;
-    border: 1px solid #ddd; /* Add border styling as needed */
-    margin: 0 10px; /* Adjust margin as needed */
-    background-color: white; /* Adjust the background color as needed */
+    border: 1px solid #ddd; 
+    margin: 0 10px; 
+    background-color: white; 
+    width: 100%;
 }
 
 .flight-main {
@@ -213,8 +215,8 @@ footer .other a:hover {
 }
 
 .fc-logo {
-    width: 50px; /* Set a fixed width for the airline logo */
-    height: 50px; /* Set a fixed height for the airline logo */
+    width: 50px; 
+    height: 50px; /* Set a fixed height and width for the airline logo */
 }
 
 .fc-logo img {
